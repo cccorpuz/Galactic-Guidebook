@@ -14,6 +14,7 @@
 		6CD1445D24AA5D3C00C62E14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CD1445B24AA5D3C00C62E14 /* Main.storyboard */; };
 		6CD1445F24AA5D3D00C62E14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CD1445E24AA5D3D00C62E14 /* Assets.xcassets */; };
 		6CD1446224AA5D3D00C62E14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CD1446024AA5D3D00C62E14 /* LaunchScreen.storyboard */; };
+		6CD1446A24AA5FE400C62E14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD1446924AA5FE400C62E14 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		6CD1445E24AA5D3D00C62E14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CD1446124AA5D3D00C62E14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CD1446324AA5D3D00C62E14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CD1446924AA5FE400C62E14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				6CD1445324AA5D3C00C62E14 /* AppDelegate.swift */,
 				6CD1445524AA5D3C00C62E14 /* SceneDelegate.swift */,
 				6CD1445724AA5D3C00C62E14 /* FirstViewController.swift */,
+				6CD1446924AA5FE400C62E14 /* ViewController.swift */,
 				6CD1445924AA5D3C00C62E14 /* SecondViewController.swift */,
 				6CD1445B24AA5D3C00C62E14 /* Main.storyboard */,
 				6CD1445E24AA5D3D00C62E14 /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CD1446A24AA5FE400C62E14 /* ViewController.swift in Sources */,
 				6CD1445A24AA5D3C00C62E14 /* SecondViewController.swift in Sources */,
 				6CD1445824AA5D3C00C62E14 /* FirstViewController.swift in Sources */,
 				6CD1445424AA5D3C00C62E14 /* AppDelegate.swift in Sources */,
