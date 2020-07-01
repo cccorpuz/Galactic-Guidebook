@@ -8,27 +8,11 @@
 
 import UIKit
 
-class FirstViewController: UIViewController, UITableViewDelegate,
-UITableViewDataSource {
-    
-    
-    @IBOutlet weak var mainTableView: UITableView!
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = mainTableView.dequeueReusableCell(withIdentifier: "id")
-        cell?.textLabel?.text = "Test"
-        return cell!
-    }
-    
+class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        mainTableView.delegate = self
-        mainTableView.dataSource = self
     }
 
 
