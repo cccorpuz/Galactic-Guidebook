@@ -35,9 +35,6 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </tableViewCellContentView>
-                                                <connections>
-                                                    <segue destination="9Bc-h8-XfX" kind="show" id="bcP-BP-SQS"/>
-                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
@@ -56,6 +53,7 @@
                     <tabBarItem key="tabBarItem" title="Planet Table" image="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="mainTableView" destination="0Jz-fP-KYz" id="P6Z-to-lPg"/>
+                        <segue destination="9Bc-h8-XfX" kind="show" identifier="tableToDetailSegue" id="Vx9-sU-uy5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>

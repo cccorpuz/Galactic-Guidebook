@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6C2F97E124AD1C0800D1819F /* Planets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2F97E024AD1C0800D1819F /* Planets.swift */; };
+		6C2F97E124AD1C0800D1819F /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2F97E024AD1C0800D1819F /* Planet.swift */; };
 		6C435BCB24AD5F2F00ED5D6E /* ScrollView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C435BCA24AD5F2F00ED5D6E /* ScrollView.storyboard */; };
 		6C435BCD24AD6A5B00ED5D6E /* ScrollViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C435BCC24AD6A5B00ED5D6E /* ScrollViewViewController.swift */; };
 		6CD1445424AA5D3C00C62E14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD1445324AA5D3C00C62E14 /* AppDelegate.swift */; };
@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6C2F97E024AD1C0800D1819F /* Planets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planets.swift; sourceTree = "<group>"; };
+		6C2F97E024AD1C0800D1819F /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		6C435BCA24AD5F2F00ED5D6E /* ScrollView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScrollView.storyboard; sourceTree = "<group>"; };
 		6C435BCC24AD6A5B00ED5D6E /* ScrollViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewViewController.swift; sourceTree = "<group>"; };
 		6CD1445024AA5D3C00C62E14 /* Galactic-Guidebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Galactic-Guidebook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,8 +74,12 @@
 				6CD1446924AA5FE400C62E14 /* ViewController.swift */,
 =======
 				6C435BCC24AD6A5B00ED5D6E /* ScrollViewViewController.swift */,
+<<<<<<< HEAD
 				6C2F97E024AD1C0800D1819F /* Planets.swift */,
 >>>>>>> de994c4ad6b8b20fe9320439f66bda9fa25bace0
+=======
+				6C2F97E024AD1C0800D1819F /* Planet.swift */,
+>>>>>>> 554227906a8ad7d9ce6eb9195e4328b3c7117dc0
 				6CD1445924AA5D3C00C62E14 /* SecondViewController.swift */,
 				6CD1445B24AA5D3C00C62E14 /* Main.storyboard */,
 				6CD1445E24AA5D3D00C62E14 /* Assets.xcassets */,
@@ -160,7 +164,7 @@
 				6CD1446A24AA5FE400C62E14 /* ViewController.swift in Sources */,
 				6CD1445A24AA5D3C00C62E14 /* SecondViewController.swift in Sources */,
 				6C435BCD24AD6A5B00ED5D6E /* ScrollViewViewController.swift in Sources */,
-				6C2F97E124AD1C0800D1819F /* Planets.swift in Sources */,
+				6C2F97E124AD1C0800D1819F /* Planet.swift in Sources */,
 				6CD1445824AA5D3C00C62E14 /* FirstViewController.swift in Sources */,
 				6CD1445424AA5D3C00C62E14 /* AppDelegate.swift in Sources */,
 				6CD1445624AA5D3C00C62E14 /* SceneDelegate.swift in Sources */,
