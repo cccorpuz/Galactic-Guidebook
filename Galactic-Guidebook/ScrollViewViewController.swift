@@ -13,6 +13,7 @@ class ScrollViewViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var planetImage: UIImageView!
     @IBOutlet weak var planetName: UILabel!
     @IBOutlet weak var planetDescription: UILabel!
+    var selectedPlanet : Planet?
 
     override func viewDidLoad() {
         super.viewDidLoad()

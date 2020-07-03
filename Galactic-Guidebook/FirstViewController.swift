@@ -12,6 +12,7 @@ class FirstViewController: UIViewController, UITableViewDelegate,
 UITableViewDataSource {
     
     @IBOutlet weak var mainTableView: UITableView!
+    var selectedPlanet : Planet?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,17 +21,30 @@ UITableViewDataSource {
         mainTableView.dataSource = self
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        let object = Planet(t: "Earth", desc: "It's green and we live on it", l: "link", im: UIImage(named: "earth")!)
+        planets.append(object)
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return planets.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = mainTableView.dequeueReusableCell(withIdentifier: "id")
-        cell?.textLabel?.text = "Test"
+        cell?.imageView?.image = planets[indexPath.row].image!
+        cell?.textLabel?.text = planets[indexPath.row].title!
         return cell!
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedPlanet = planets[indexPath.row]
+    }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let scrollViewController = segue.destination as! ScrollViewViewController
+        scrollViewController.selectedPlanet = selectedPlanet
+    }
     
 }
 
