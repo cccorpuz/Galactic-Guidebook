@@ -7,18 +7,27 @@
 //
 
 import UIKit
+import SafariServices
 
-class ScrollViewViewController: UIViewController, UIScrollViewDelegate {
+class ScrollViewViewController: UIViewController, UIScrollViewDelegate, SFSafariViewControllerDelegate {
 
     @IBOutlet weak var planetImage: UIImageView!
-    @IBOutlet weak var planetName: UILabel!
-    @IBOutlet weak var planetDescription: UILabel!
+    @IBOutlet weak var planetNameLabel: UILabel!
+    @IBOutlet weak var planetDescriptionLabel: UILabel!
+    @IBAction func onLinkButtonPressed(_ sender: Any) {
+        let safariViewController = SFSafariViewController(url: URL(string: (selectedPlanet?.link)!)!)
+        safariViewController.delegate = self as! SFSafariViewControllerDelegate
+        present(safariViewController, animated: true, completion: nil)
+    }
+    
     var selectedPlanet : Planet?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        planetImage.image = selectedPlanet?.image!
+        planetNameLabel.text = selectedPlanet?.title!
+        planetDescriptionLabel.text = selectedPlanet?.textDescription!
     }
     
 

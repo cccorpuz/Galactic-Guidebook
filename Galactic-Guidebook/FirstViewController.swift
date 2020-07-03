@@ -22,7 +22,7 @@ UITableViewDataSource {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        let object = Planet(t: "Earth", desc: "It's green and we live on it", l: "link", im: UIImage(named: "earth")!)
+        let object = Planet(t: "Earth", desc: "It's green and we live on it", l: "https://space-facts.com", im: UIImage(named: "earth")!)
         planets.append(object)
     }
     
@@ -38,7 +38,10 @@ UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath)
+        tableView.deselectRow(at: indexPath, animated: true)
         selectedPlanet = planets[indexPath.row]
+        performSegue(withIdentifier: "tableToDetailSegue", sender: cell)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

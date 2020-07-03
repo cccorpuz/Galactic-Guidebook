@@ -42,6 +42,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qL-fg-XsN">
                                                 <rect key="frame" x="40" y="824" width="334" height="30"/>
                                                 <state key="normal" title="Click Here to Learn More!"/>
+                                                <connections>
+                                                    <action selector="onLinkButtonPressed:" destination="SN5-3x-VSF" eventType="touchUpInside" id="5mG-Vy-9my"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Planet Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYQ-gM-8Xw">
                                                 <rect key="frame" x="53" y="400" width="314" height="48"/>
@@ -84,6 +87,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Yym-XN-2kk"/>
                     </view>
+                    <connections>
+                        <outlet property="planetDescriptionLabel" destination="Taz-aU-WNU" id="cX3-HA-fXf"/>
+                        <outlet property="planetImage" destination="0dN-4Z-HE8" id="hZ5-Jh-lsK"/>
+                        <outlet property="planetNameLabel" destination="JYQ-gM-8Xw" id="fcR-vv-UmU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YuE-GX-iYq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
