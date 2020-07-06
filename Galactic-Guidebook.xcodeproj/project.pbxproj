@@ -70,16 +70,14 @@
 				6CD1445324AA5D3C00C62E14 /* AppDelegate.swift */,
 				6CD1445524AA5D3C00C62E14 /* SceneDelegate.swift */,
 				6CD1445724AA5D3C00C62E14 /* FirstViewController.swift */,
-<<<<<<< HEAD
+
 				6CD1446924AA5FE400C62E14 /* ViewController.swift */,
-=======
 				6C435BCC24AD6A5B00ED5D6E /* ScrollViewViewController.swift */,
-<<<<<<< HEAD
+
 				6C2F97E024AD1C0800D1819F /* Planets.swift */,
->>>>>>> de994c4ad6b8b20fe9320439f66bda9fa25bace0
-=======
+
 				6C2F97E024AD1C0800D1819F /* Planet.swift */,
->>>>>>> 554227906a8ad7d9ce6eb9195e4328b3c7117dc0
+
 				6CD1445924AA5D3C00C62E14 /* SecondViewController.swift */,
 				6CD1445B24AA5D3C00C62E14 /* Main.storyboard */,
 				6CD1445E24AA5D3D00C62E14 /* Assets.xcassets */,

@@ -37,8 +37,7 @@ UITableViewDataSource {
         return cell!
     }
     
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,20 +45,19 @@ UITableViewDataSource {
         mainTableView.delegate = self
         mainTableView.dataSource = self
     }
-=======
-=======
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath)
         tableView.deselectRow(at: indexPath, animated: true)
         selectedPlanet = planets[indexPath.row]
         performSegue(withIdentifier: "tableToDetailSegue", sender: cell)
     }
->>>>>>> 554227906a8ad7d9ce6eb9195e4328b3c7117dc0
+>
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let scrollViewController = segue.destination as! ScrollViewViewController
         scrollViewController.selectedPlanet = selectedPlanet
     }
     
->>>>>>> de994c4ad6b8b20fe9320439f66bda9fa25bace0
+
 }
