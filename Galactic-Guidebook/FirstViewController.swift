@@ -39,12 +39,6 @@ UITableViewDataSource {
     
 
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        mainTableView.delegate = self
-        mainTableView.dataSource = self
-    }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath)
@@ -52,7 +46,7 @@ UITableViewDataSource {
         selectedPlanet = planets[indexPath.row]
         performSegue(withIdentifier: "tableToDetailSegue", sender: cell)
     }
->
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let scrollViewController = segue.destination as! ScrollViewViewController
